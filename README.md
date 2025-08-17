@@ -186,7 +186,7 @@ Update
 ---
 Delete 
 
->Method: PUT
+>Method: DELETE
 
 >Endpoint: /users/delete/{id}
 
