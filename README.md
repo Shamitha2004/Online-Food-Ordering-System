@@ -103,36 +103,36 @@ User Register Endpoint
 ---
 Login Endpoint 
 
-Method: POST
+>Method: POST
 
-Endpoint: /users/login
+>Endpoint: /users/login
 
 <img width="1889" height="962" alt="Screenshot 2025-08-18 005604" src="https://github.com/user-attachments/assets/0c438415-03a6-4905-9c0c-ddaa0df8914c" />
 
 ---
 Get all users
 
-Method: GET
+>Method: GET
 
-Endpoint: /users/all
+>Endpoint: /users/all
 
 <img width="1771" height="925" alt="Screenshot 2025-08-18 005728" src="https://github.com/user-attachments/assets/267611a6-cb77-4a95-8fed-d255db9a677a" />
 
 ---
 Update 
 
-Method: PUT
+>Method: PUT
 
-Endpoint: /users/update/{id}
+>Endpoint: /users/update/{id}
 
 <img width="1760" height="894" alt="Screenshot 2025-08-18 010419" src="https://github.com/user-attachments/assets/a77d2f10-0750-422c-9039-80e0055ebfa1" />
 
 ---
 Delete 
 
-Method: PUT
+>Method: PUT
 
-Endpoint: /users/delete/{id}
+>Endpoint: /users/delete/{id}
 
 <img width="1816" height="863" alt="Screenshot 2025-08-18 010526" src="https://github.com/user-attachments/assets/ac1645db-c6d0-45cf-99aa-3eac300d82e6" />
 
@@ -147,6 +147,42 @@ Endpoint: /users/delete/{id}
 | Update Menu Item    | PUT    | `/menu/update/{id}` | Update menu item       |
 | Delete Menu Item    | DELETE | `/menu/delete/{id}` | Delete menu item       |
 
+Login Endpoint 
+
+>Method: POST
+
+>Endpoint: /users/login
+
+
+
+---
+Get all users
+
+>Method: GET
+
+>Endpoint: /users/all
+
+
+
+---
+Update 
+
+>Method: PUT
+
+>Endpoint: /users/update/{id}
+
+
+
+---
+Delete 
+
+>Method: PUT
+
+>Endpoint: /users/delete/{id}
+
+
+
+---
 ### Cart Endpoints
 
 | Feature          | Method | URL                         | Description               |
