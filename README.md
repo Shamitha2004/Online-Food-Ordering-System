@@ -82,7 +82,7 @@ User → Browse Menu → Add to Cart → Checkout → Place Order → Payment �
 
 
 ```
-![System Flow](images/flowchart.png)
+"D:\eclipseWorkspace\Spring_boot\Online_Food_Ordering\zImages\flowchart.png"
 
 ---
 
