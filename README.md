@@ -147,7 +147,7 @@ Delete
 | Update Menu Item    | PUT    | `/menu/update/{id}` | Update menu item       |
 | Delete Menu Item    | DELETE | `/menu/delete/{id}` | Delete menu item       |
 
-Login Endpoint 
+Add Menu Item  
 
 >Method: POST
 
@@ -192,8 +192,6 @@ Delete
 
 <img width="1754" height="271" alt="Screenshot 2025-08-18 014039" src="https://github.com/user-attachments/assets/b4224039-5a6f-4586-80ef-7183cc587e43" />
 
-
-
 ---
 ### Cart Endpoints
 
@@ -205,6 +203,50 @@ Delete
 | Clear Cart       | DELETE | `/cart/clear/{userId}`      | Remove all items          |
 | Checkout Cart    | POST   | `/cart/checkout/{userId}`   | Checkout and create order |
 
+Add Menu Item  
+
+>Method: POST
+
+>Endpoint: [/users/login](http://localhost:8080/menu/add)
+
+
+---
+Get all users
+
+>Method: GET
+
+>Endpoint: [/users/all](http://localhost:8080/menu/all)
+
+
+---
+
+Get menu item by id
+
+>Method: GET
+
+>Endpoint: [/users/all](http://localhost:8080/menu/all)
+
+
+---
+Update 
+
+>Method: PUT
+
+>Endpoint: [/users/update/{id}](http://localhost:8080/menu/update/29)
+
+
+
+---
+Delete 
+
+>Method: DELETE
+
+>Endpoint: [/users/delete/{id}](http://localhost:8080/menu/delete/29)
+
+<img width="1754" height="271" alt="Screenshot 2025-08-18 014039" src="https://github.com/user-attachments/assets/cd42a9ed-74fb-4c04-971e-62f5f92f306e" />
+
+
+---
 ### Order Endpoints
 
 | Feature             | Method | URL                                                | Description            |
@@ -212,6 +254,51 @@ Delete
 | Place Order         | POST   | `/orders`                                          | Place order directly   |
 | Update Order Status | PUT    | `/orders/update-status/{orderId}?status=CONFIRMED` | Update order status    |
 | Get All Orders      | GET    | `/orders/all`                                      | Admin: view all orders |
+
+---
+Add Menu Item  
+
+>Method: POST
+
+>Endpoint: [/users/login](http://localhost:8080/menu/add)
+
+
+---
+Get all users
+
+>Method: GET
+
+>Endpoint: [/users/all](http://localhost:8080/menu/all)
+
+
+---
+
+Get menu item by id
+
+>Method: GET
+
+>Endpoint: [/users/all](http://localhost:8080/menu/all)
+
+
+---
+Update 
+
+>Method: PUT
+
+>Endpoint: [/users/update/{id}](http://localhost:8080/menu/update/29)
+
+
+
+---
+Delete 
+
+>Method: DELETE
+
+>Endpoint: /users/delete/{id}
+
+
+
+---
 
 ### Payment Endpoints
 
@@ -228,7 +315,49 @@ Delete
 | Get Feedback by User | GET    | `/feedback/user/{userId}` | Fetch feedback for a user |
 
 ---
+Add Menu Item  
 
+>Method: POST
+
+>Endpoint: [/users/login](http://localhost:8080/menu/add)
+
+
+---
+Get all users
+
+>Method: GET
+
+>Endpoint: [/users/all](http://localhost:8080/menu/all)
+
+
+---
+
+Get menu item by id
+
+>Method: GET
+
+>Endpoint: [/users/all](http://localhost:8080/menu/all)
+
+
+---
+Update 
+
+>Method: PUT
+
+>Endpoint: [/users/update/{id}](http://localhost:8080/menu/update/29)
+
+
+
+---
+Delete 
+
+>Method: DELETE
+
+>Endpoint: /users/delete/{id}
+
+
+
+---
 ## **6. Sample JSON Requests**
 
 ### Register User
