@@ -91,12 +91,32 @@ User → Browse Menu → Add to Cart → Checkout → Place Order → Payment �
 | Update User   | PUT    | `/users/update/{id}` | Update user info      |
 | Delete User   | DELETE | `/users/delete/{id}` | Delete user           |
 ---
+
 User Register Endpoint
-This endpoint allows a new user to create an account by providing the required details such as username, password, and role.
-Example:
+
 Method: POST
-Endpoint: /api/users/register
+Endpoint: /users/register
 <img width="1742" height="932" alt="Screenshot 2025-08-18 004706" src="https://github.com/user-attachments/assets/5833615c-eeeb-4d47-b44e-f8f76a11027b" />
+
+Login Endpoint 
+Method: POST
+Endpoint: /users/login
+<img width="1889" height="962" alt="Screenshot 2025-08-18 005604" src="https://github.com/user-attachments/assets/0c438415-03a6-4905-9c0c-ddaa0df8914c" />
+
+Get all users
+Method: GET
+Endpoint: /users/all
+<img width="1771" height="925" alt="Screenshot 2025-08-18 005728" src="https://github.com/user-attachments/assets/267611a6-cb77-4a95-8fed-d255db9a677a" />
+
+Update 
+Method: PUT
+Endpoint: /users/update/{id}
+<img width="1760" height="894" alt="Screenshot 2025-08-18 010419" src="https://github.com/user-attachments/assets/a77d2f10-0750-422c-9039-80e0055ebfa1" />
+
+Delete 
+Method: PUT
+Endpoint: /users/delete/{id}
+<img width="1816" height="863" alt="Screenshot 2025-08-18 010526" src="https://github.com/user-attachments/assets/ac1645db-c6d0-45cf-99aa-3eac300d82e6" />
 
 
 ### Menu Endpoints
