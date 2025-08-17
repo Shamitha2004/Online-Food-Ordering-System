@@ -94,9 +94,9 @@ User → Browse Menu → Add to Cart → Checkout → Place Order → Payment �
 
 User Register Endpoint
 
-Method: POST
+>Method: POST
 
-Endpoint: /users/register
+>Endpoint: /users/register
 
 <img width="1742" height="932" alt="Screenshot 2025-08-18 004706" src="https://github.com/user-attachments/assets/5833615c-eeeb-4d47-b44e-f8f76a11027b" />
 
