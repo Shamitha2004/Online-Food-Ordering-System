@@ -34,8 +34,20 @@ Built with: **Spring Boot | MySQL | Java | REST APIs | JUnit**
 ```sql
 CREATE DATABASE ONLINE_FOOD;
 ```
+3. Database structure 
+User (id, username, password, role)
+  │
+  └── Cart (id, user_id)
+          └── CartItem (id, cart_id, menuItem_id, quantity)
 
-3. Update `application.properties`:
+Orders (id, user_id, status, totalAmount)
+  └── Payment (id, order_id, amount, status)
+
+Feedback (id, user_id, message, rating)
+MenuItems (id, name, price, description, category)
+
+
+4. Update `application.properties`:
 
 ```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/ONLINE_FOOD
