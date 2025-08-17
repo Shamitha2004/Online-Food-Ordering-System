@@ -207,8 +207,9 @@ Add Menu Item
 
 >Method: POST
 
->Endpoint: [/users/login](http://localhost:8080/menu/add)
+>Endpoint: http://localhost:8080/cart/add
 
+<img width="1813" height="925" alt="Screenshot 2025-08-18 015955" src="https://github.com/user-attachments/assets/f928da94-a795-479d-aed7-6ac067777edf" />
 
 ---
 Get all users
