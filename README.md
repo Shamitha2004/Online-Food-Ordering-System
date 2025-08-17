@@ -80,8 +80,9 @@ User → Browse Menu → Add to Cart → Checkout → Place Order → Payment �
                                   Feedback
 
 
-![System Flow](images/flowchart.png)
+
 ```
+![System Flow](images/flowchart.png)
 
 ---
 
