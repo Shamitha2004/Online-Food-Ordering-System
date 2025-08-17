@@ -71,17 +71,7 @@ User → Browse Menu → Add to Cart → Checkout → Place Order → Payment �
 
 **Visual Diagram:**
 
-```text
- +--------+       +--------+       +-------+       +--------+       +---------+
- |  User  | ----> |  Cart  | ----> | Order | ----> | Payment| ----> |Delivery |
- +--------+       +--------+       +-------+       +--------+       +---------+
-       |                                                          |
-       |---------------------------------------------------------->|
-                                  Feedback
 
-
-
-```
 <img width="1584" height="431" alt="flowchart" src="https://github.com/user-attachments/assets/e14de550-0bfd-4e4a-bd3d-1089f1bd5258" />
 
 
