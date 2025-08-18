@@ -300,8 +300,9 @@ Delete
 
 >Method: DELETE
 
->Endpoint:
+>Endpoint: http://localhost:8080/cart/item/1
 
+<img width="1775" height="901" alt="Screenshot 2025-08-18 201550" src="https://github.com/user-attachments/assets/cec5e410-011e-4049-ae2e-77f3f9da1c97" />
 
 ---
 
