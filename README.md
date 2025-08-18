@@ -431,35 +431,100 @@ Delete
 }
 ```
 
----
-
 ## **7. How to Run Locally**
 
-1. Clone the repository.
-2. Start MySQL and create `ONLINE_FOOD` database.
-3. Update `application.properties` with your MySQL credentials.
-4. Open the project in IntelliJ/Eclipse.
-5. Run the Spring Boot application.
-6. Use Postman to test endpoints with `http://localhost:8080`.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shamitha2004/Online-Food-Ordering-System.git
+2. Start MySQL and create the database ONLINE_FOOD:
+    ```bash
+    CREATE DATABASE ONLINE_FOOD;
+3. Update `application.properties` with  MySQL credentials.
+    ```bash
+    spring.datasource.url=jdbc:mysql://localhost:3306/ONLINE_FOOD
+    spring.datasource.username=your_mysql_username
+    spring.datasource.password=your_mysql_password
+    spring.jpa.hibernate.ddl-auto=update
+    spring.jpa.show-sql=true
+4.  Open the project in IntelliJ/Eclipse.
+5.  Run the Spring Boot application:
+    ```bash
+    mvn spring-boot:run
+6.  Use Postman or any API client to test endpoints at:
+   ```bash
+    http://localhost:8080
 
----
+```
 
 ## **8. Testing**
 
-* **Unit Tests**: Test services individually (`OrderServiceTest`, `UserServiceTest` etc.)
-* **Integration Tests**: Test full flows using MockMvc:
-
-  * Menu CRUD → `MenuIntegrationTest`
-  * Place Order → `OrdersIntegrationTest`
-  * Payment & Delivery → `PaymentIntegrationTest`
+* **Unit Tests**: Test individual service layers such as OrderServiceTest and UserServiceTest.
+* **Integration Tests**: Test complete flows using MockMvc:
+    * Menu CRUD → `MenuIntegrationTest`
+    * Place Order → `OrdersIntegrationTest`
+    * Payment & Delivery → `PaymentIntegrationTest`
+    * Feedback Submission → `FeedbackIntegrationTest`
 
 ---
 
-## **9.Flow**
+## **10. Application Flow**
 
-1. User registers → logs in.
-2. Browses menu → adds items to cart.
-3. Checkout → order is created.
-4. Payment → order status changes → delivery simulated.
-5. User gives feedback.
+The Online Food Ordering System follows these main steps from user interaction to order completion and feedback:
+
+1. **User Registration and Login**
+   - Users register with basic details (username, password, role).
+   - Registered users log in to access the system.
+
+2. **Browsing Menu**
+   - Users can view all available menu items.
+   - Menu items are categorized (e.g., Starters, Main Course, Desserts).
+
+3. **Adding Items to Cart**
+   - Users select desired menu items.
+   - Items are added to a virtual cart for checkout.
+
+4. **Placing an Order**
+   - Users proceed to checkout.
+   - An order is created in the system with:
+     - User details
+     - Selected menu items
+     - Order time
+     - Status initially set to `PENDING`
+
+5. **Payment Process**
+   - Users choose a payment method (UPI, Credit Card, Cash).
+   - Payment is processed and recorded in the `payments` table.
+   - Payment status is tracked as `PENDING`, `SUCCESS`, or `FAILED`.
+
+6. **Order Status Updates**
+   - After successful payment:
+     - Order status changes from `PENDING` → `CONFIRMED`.
+     - System simulates delivery with status updates:
+       - `CONFIRMED` → `OUT_FOR_DELIVERY` → `DELIVERED`.
+   - Users can cancel orders in certain statuses (e.g., `PENDING` or `CONFIRMED`).
+
+7. **Feedback Submission**
+   - Users can submit feedback for an order after delivery.
+   - Feedback includes:
+     - User ID
+     - Message or comment
+     - Rating (1–5)
+   - Feedback is stored and can be retrieved individually or collectively.
+
+8. **Admin/Service Management (Optional)**
+   - Admins can manage menu items (CRUD operations).
+   - Admins can view all orders, payments, and feedback.
+
+9. **Error Handling**
+   - Invalid transitions (e.g., skipping order statuses) are blocked.
+   - Duplicate payments or missing data trigger informative error messages.
+
+10. **Testing and Validation**
+    - Unit tests validate individual services (OrderService, UserService, etc.).
+    - Integration tests validate full flows:
+      - Menu management
+      - Order placement
+      - Payment & delivery
+      - Feedback submission
+---
 
