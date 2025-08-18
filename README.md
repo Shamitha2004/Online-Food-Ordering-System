@@ -267,20 +267,23 @@ Add Order Item
 
 
 ---
-Get all users
+Get all orders
 
 >Method: GET
 
->Endpoint: [/users/all](http://localhost:8080/menu/all)
+>Endpoint: http://localhost:8080/orders
 
+<img width="1776" height="965" alt="Screenshot 2025-08-18 191949" src="https://github.com/user-attachments/assets/de9f6eea-ffcf-4bad-8129-66d16a4c50e7" />
 
 ---
 
-Get menu item by id
+Get order item by id
 
 >Method: GET
 
->Endpoint: [/users/all](http://localhost:8080/menu/all)
+>Endpoint: http://localhost:8080/orders/15
+
+<img width="1820" height="896" alt="Screenshot 2025-08-18 192304" src="https://github.com/user-attachments/assets/a11cb30b-c373-4784-87d4-3d95909e890d" />
 
 
 ---
@@ -288,17 +291,16 @@ Update
 
 >Method: PUT
 
->Endpoint: [/users/update/{id}](http://localhost:8080/menu/update/29)
+>Endpoint: http://localhost:8080/orders/16/status?status=CONFIRMED
 
-
+<img width="1813" height="898" alt="Screenshot 2025-08-18 191551" src="https://github.com/user-attachments/assets/de2e45f9-5cc6-490a-b8a1-c8f5bd1fddb3" />
 
 ---
 Delete 
 
 >Method: DELETE
 
->Endpoint: /users/delete/{id}
-
+>Endpoint:
 
 
 ---
@@ -308,6 +310,16 @@ Delete
 | Feature             | Method | URL                                             | Description                   |
 | ------------------- | ------ | ----------------------------------------------- | ----------------------------- |
 | Pay & Deliver Order | POST   | `/payments/pay/{orderId}?amount=100&method=UPI` | Simulate payment and delivery |
+---
+
+Pay & Deliver Order
+
+>Method: POST
+
+>Endpoint: http://localhost:8080/payments/17?amount=500&method=UPI
+
+<img width="1813" height="972" alt="Screenshot 2025-08-18 195151" src="https://github.com/user-attachments/assets/aaad68e3-ffc8-4b21-a17c-abcc99cdc0ac" />
+
 
 ### Feedback Endpoints
 
@@ -318,28 +330,33 @@ Delete
 | Get Feedback by User | GET    | `/feedback/user/{userId}` | Fetch feedback for a user |
 
 ---
-Add Menu Item  
+Add Feedback   
 
 >Method: POST
 
->Endpoint: [/users/login](http://localhost:8080/menu/add)
+>Endpoint: http://localhost:8080/feedback/add
 
+<img width="1827" height="775" alt="Screenshot 2025-08-18 200408" src="https://github.com/user-attachments/assets/0dbe5f6c-f25e-4d4b-8177-7cf40d514dd2" />
 
 ---
-Get all users
+Get all users feedback
 
 >Method: GET
 
->Endpoint: [/users/all](http://localhost:8080/menu/all)
+>Endpoint: http://localhost:8080/feedback/all
 
+<img width="1758" height="895" alt="Screenshot 2025-08-18 200951" src="https://github.com/user-attachments/assets/37cbb770-15ba-4092-8695-46ad15748e63" />
 
 ---
 
-Get menu item by id
+Get feedback by id
 
 >Method: GET
 
->Endpoint: [/users/all](http://localhost:8080/menu/all)
+>Endpoint: http://localhost:8080/feedback/user/4
+
+<img width="1789" height="737" alt="Screenshot 2025-08-18 200559" src="https://github.com/user-attachments/assets/2fbb10ab-4a4b-4ec1-8ec4-3e335e428846" />
+
 
 
 ---
