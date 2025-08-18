@@ -257,11 +257,13 @@ Delete
 | Get All Orders      | GET    | `/orders/all`                                      | Admin: view all orders |
 
 ---
-Add Menu Item  
+Add Order Item  
 
 >Method: POST
 
->Endpoint: [/users/login](http://localhost:8080/menu/add)
+>Endpoint: http://localhost:8080/orders
+
+<img width="1743" height="866" alt="image" src="https://github.com/user-attachments/assets/b7fa1661-7b75-4628-99dd-e34ed7b8896e" />
 
 
 ---
