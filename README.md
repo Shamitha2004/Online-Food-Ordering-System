@@ -157,7 +157,7 @@ Add Menu Item
 
 >Method: POST
 
->Endpoint: [/users/login](http://localhost:8080/menu/add)
+>Endpoint: http://localhost:8080/menu/add
 
 <img width="1767" height="880" alt="Screenshot 2025-08-18 013245" src="https://github.com/user-attachments/assets/45afd049-0b72-48bb-b5a8-d695a586525f" />
 
@@ -166,7 +166,7 @@ Get all users
 
 >Method: GET
 
->Endpoint: [/users/all](http://localhost:8080/menu/all)
+>Endpoint: http://localhost:8080/menu/all
 
 <img width="1799" height="966" alt="Screenshot 2025-08-18 012847" src="https://github.com/user-attachments/assets/2acbd4d9-bba5-4541-9311-81f14361961f" />
 
@@ -176,7 +176,7 @@ Get menu item by id
 
 >Method: GET
 
->Endpoint: [/users/all](http://localhost:8080/menu/all)
+>Endpoint: http://localhost:8080/menu/all
 
 <img width="1829" height="552" alt="Screenshot 2025-08-18 013551" src="https://github.com/user-attachments/assets/ea203e42-1cc7-4334-9455-d0631b1a664a" />
 
@@ -185,7 +185,7 @@ Update
 
 >Method: PUT
 
->Endpoint: [/users/update/{id}](http://localhost:8080/menu/update/29)
+>Endpoint: http://localhost:8080/menu/update/29
 
 <img width="1768" height="695" alt="Screenshot 2025-08-18 013844" src="https://github.com/user-attachments/assets/d0e7e153-a7f9-4c5c-8c79-5556fd2eb3e7" />
 
@@ -209,7 +209,7 @@ Delete
 | Clear Cart       | DELETE | `/cart/clear/{userId}`      | Remove all items          |
 | Checkout Cart    | POST   | `/cart/checkout/{userId}`   | Checkout and create order |
 
-Add Menu Item  
+Add Cart Item  
 
 >Method: POST
 
