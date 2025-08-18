@@ -218,20 +218,24 @@ Add Cart Item
 <img width="1813" height="925" alt="Screenshot 2025-08-18 015955" src="https://github.com/user-attachments/assets/f928da94-a795-479d-aed7-6ac067777edf" />
 
 ---
-Get all users
+Get all Cart Items of a user 
 
 >Method: GET
 
->Endpoint: [/users/all](http://localhost:8080/menu/all)
+>Endpoint: http://localhost:8080/cart/4
 
+<img width="1783" height="958" alt="Screenshot 2025-08-18 113128" src="https://github.com/user-attachments/assets/0b38787b-3c48-49df-a1a4-d287cea877b4" />
 
 ---
 
-Get menu item by id
+Update menu item by id
 
 >Method: GET
 
->Endpoint: [/users/all](http://localhost:8080/menu/all)
+>Endpoint: http://localhost:8080/cart/add
+
+<img width="1609" height="952" alt="Screenshot 2025-08-18 113057" src="https://github.com/user-attachments/assets/faeb642c-6cce-4f96-a20b-29aac6f524da" />
+
 
 
 ---
