@@ -376,60 +376,8 @@ Delete
 
 >Endpoint: /users/delete/{id}
 
-
-
 ---
-## **6. Sample JSON Requests**
 
-### Register User
-
-```json
-{
-  "username": "john_doe",
-  "password": "12345",
-  "role": "USER"
-}
-```
-
-### Add Menu Item (Admin)
-
-```json
-{
-  "name": "Pizza",
-  "price": 500,
-  "description": "Delicious cheese pizza",
-  "category": "Fast Food"
-}
-```
-
-### Add Item to Cart
-
-```json
-{
-  "userId": 1,
-  "menuItemId": 1,
-  "quantity": 2
-}
-```
-
-### Place Order
-
-```json
-{
-  "userId": 1,
-  "menuItemIds": [1, 2]
-}
-```
-
-### Add Feedback
-
-```json
-{
-  "userId": 1,
-  "message": "The pizza was amazing!",
-  "rating": 5
-}
-```
 
 ## **7. How to Run Locally**
 
