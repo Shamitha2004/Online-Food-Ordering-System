@@ -49,15 +49,21 @@ spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
 
 ## **3. Entities**
 
-| Entity        | Description                         |
-| ------------- | ----------------------------------- |
-| **User**      | Stores username, password, and role |
-| **MenuItems** | Name, price, description, category  |
-| **Cart**      | User's current items                |
-| **CartItem**  | Each item in the cart with quantity |
-| **Orders**    | Tracks orders and order status      |
-| **Payment**   | Tracks payment details and status   |
-| **Feedback**  | Stores user feedback and rating     |
+### Database Tables
+
+The project uses the following tables to manage users, menu items, carts, orders, payments, and feedback:
+
+| Table Name        | Description                                                  |
+|------------------|--------------------------------------------------------------|
+| `users`           | Stores user details including username, password, and role. |
+| `menu_items`      | Contains all available menu items with name, description, price, and category. |
+| `carts`           | Stores each user’s cart.                                     |
+| `cart_items`      | Contains items added to a cart along with quantity and price. |
+| `orders`          | Stores all orders placed by users.                           |
+| `order_menu_items`| Links orders with the menu items included in each order.     |
+| `payments`        | Stores payment details for orders.                           |
+| `feedback`        | Stores feedback submitted by users about orders or service.  |
+
 
 ---
 
