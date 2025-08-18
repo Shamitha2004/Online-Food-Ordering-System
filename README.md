@@ -220,7 +220,7 @@ Add Cart Item
 ---
 Get all Cart Items of a user 
 
->Method: GET
+>Method: POST
 
 >Endpoint: http://localhost:8080/cart/4
 
@@ -236,25 +236,15 @@ Update menu item by id
 
 <img width="1609" height="952" alt="Screenshot 2025-08-18 113057" src="https://github.com/user-attachments/assets/faeb642c-6cce-4f96-a20b-29aac6f524da" />
 
-
-
----
-Update 
-
->Method: PUT
-
->Endpoint: [/users/update/{id}](http://localhost:8080/menu/update/29)
-
-
-
 ---
 Delete 
 
 >Method: DELETE
 
->Endpoint: [/users/delete/{id}](http://localhost:8080/menu/delete/29)
+>Endpoint: http://localhost:8080/cart/item/3
 
-<img width="1754" height="271" alt="Screenshot 2025-08-18 014039" src="https://github.com/user-attachments/assets/cd42a9ed-74fb-4c04-971e-62f5f92f306e" />
+<img width="1214" height="750" alt="Screenshot 2025-08-18 113953" src="https://github.com/user-attachments/assets/1c791d37-5f5f-4987-b008-dc136e5dc68c" />
+
 
 
 ---
