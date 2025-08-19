@@ -98,7 +98,7 @@ public class OrderService {
             order.setStatus(OrderStatus.OUT_FOR_DELIVERY);
             ordersRepository.save(order);
         } else {
-            order.setStatus(OrderStatus.PENDING); // failed payment
+            order.setStatus(OrderStatus.PENDING); 
             ordersRepository.save(order);
         }
     }

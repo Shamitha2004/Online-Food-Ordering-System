@@ -10,42 +10,7 @@ import com.project.exceptions.ResourceNotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-//@Service
-//public class MenuItemService {
-//
-//    @Autowired
-//    private MenuItemRepository menuItemRepository;
-//    
-//    private static final Logger logger = LoggerFactory.getLogger(UserService.class);
-//
-//    public MenuItems addMenuItem(MenuItems menuItem) {
-//        return menuItemRepository.save(menuItem);
-//    }
-//
-//    public List<MenuItems> getAllMenuItems() {
-//        return menuItemRepository.findAll();
-//    }
-//
-//    public MenuItems getMenuItemById(Long id) {
-//        return menuItemRepository.findById(id)
-//            .orElseThrow(() -> new ResourceNotFoundException("Menu item not found with id: " + id));
-//    }
-//
-//    public MenuItems updateMenuItem(Long id, MenuItems menuItem) {
-//        MenuItems existing = getMenuItemById(id);
-//        existing.setName(menuItem.getName());
-//        existing.setPrice(menuItem.getPrice());
-//        existing.setDescription(menuItem.getDescription());
-//        existing.setCategory(menuItem.getCategory());
-//        return menuItemRepository.save(existing);
-//    }
-//    
-//    
-//
-//    public void deleteMenuItem(Long id) {
-//        getMenuItemById(id); // check existence
-//        menuItemRepository.deleteById(id);
-//    }
+
 
 @Service
 public class MenuItemService {
@@ -85,7 +50,7 @@ public class MenuItemService {
     }
 
     public void deleteMenuItem(Long id) {
-        MenuItems item = getMenuItemById(id); // check existence
+        MenuItems item = getMenuItemById(id); 
         menuItemRepository.deleteById(id);
         logger.info("Menu item deleted: {}", item.getName());
     }

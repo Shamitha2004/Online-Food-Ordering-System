@@ -13,8 +13,4 @@ public enum OrderStatus {
     public static OrderStatus fromString(String value) {
         return OrderStatus.valueOf(value.toUpperCase());
     }
-    
-
-
-
 }

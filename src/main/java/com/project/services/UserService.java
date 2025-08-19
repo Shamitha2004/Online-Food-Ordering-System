@@ -26,7 +26,7 @@ public class UserService {
     public User registerUser(User user) {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         User saved = userRepository.save(user);
-        logger.info("User registered: {}", saved.getUsername());  // INFO log
+        logger.info("User registered: {}", saved.getUsername()); 
         return saved;
     }
 
@@ -68,11 +68,11 @@ public class UserService {
                 return existingUser;
             }
         }
-        logger.warn("Failed login attempt for username: {}", username); // WARN for failed login
+        logger.warn("Failed login attempt for username: {}", username); 
         return null;
     }
 
-    // Delete user
+
     public boolean deleteUser(Long id) {
         if(userRepository.existsById(id)) {
             userRepository.deleteById(id);
